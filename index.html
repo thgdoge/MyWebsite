@@ -1,20 +1,72 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Website của Tôi</title>
-    <style>
-        body { font-family: sans-serif; text-align: center; padding: 50px; background-color: #f0f0f0; }
-        h1 { color: #333; }
-        p { color: #666; }
-        .box { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); display: inline-block; }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huỳnh Tấn Đạt | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <div class="box">
-        <h1>Xin chào! Đây là website của tôi</h1>
-        <p>Website này được chạy trên GitHub Pages.</p>
-        <p>Cảm ơn bạn đã ghé thăm.</p>
-    </div>
-</body>
-</html>
+
+    <nav class="navbar">
+        <div class="logo">Đạt.Dev</div>
+        <ul class="nav-links">
+            <li><a href="#home">Trang chủ</a></li>
+            <li><a href="#about">Giới thiệu</a></li>
+            <li><a href="#skills">Kỹ năng</a></li>
+            <li><a href="#projects">Dự án</a></li>
+            <li><a href="contact.html" class="btn-contact">Liên hệ</a></li>
+        </ul>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-text">
+                <h3>Xin chào, tôi là</h3>
+                <h1>Huỳnh Tấn Đạt</h1>
+                <p>Tôi là một <span class="highlight">Lập trình viên</span> đam mê công nghệ.</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://github.com/thgdoge"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <a href="#contact" class="btn-main">Tải CV của tôi</a>
+            </div>
+            <div class="hero-img">
+                <img src="https://github.com/thgdoge.png" alt="Avatar">
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">Về Bản Thân</h2>
+            <div class="about-content">
+                <p>Mình là một sinh viên đam mê lập trình web và bảo mật hệ thống. Mình thích tìm tòi những công nghệ mới và áp dụng chúng để tạo ra các sản phẩm thực tế. Mục tiêu của mình là trở thành một Full-stack Developer chuyên nghiệp.</p>
+                <div class="info-grid">
+                    <div><i class="fas fa-user"></i> <strong>Năm sinh:</strong> 200x</div>
+                    <div><i class="fas fa-envelope"></i> <strong>Email:</strong> dat@example.com</div>
+                    <div><i class="fas fa-map-marker-alt"></i> <strong>Địa chỉ:</strong> TP. Hồ Chí Minh</div>
+                    <div><i class="fas fa-briefcase"></i> <strong>Trạng thái:</strong> Đang tìm việc</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section bg-dark">
+        <div class="container">
+            <h2 class="section-title text-white">Kỹ Năng Chuyên Môn</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fab fa-html5" style="color: #e34f26;"></i>
+                    <h3>HTML5 / CSS3</h3>
+                    <p>Thành thạo xây dựng giao diện</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-js" style="color: #f7df1e;"></i>
+                    <h3>JavaScript</h3>
+                    <p>Xử lý logic & hiệu ứng</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-react" style="color: #61dafb;"></i>
